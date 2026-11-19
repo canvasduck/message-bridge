@@ -1,0 +1,21 @@
+{
+  "name": "message-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Message bridge between Claude Code sessions, with snooze and deferred work.",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "server": "node server/server.mjs",
+    "admin": "node server/admin.mjs",
+    "build": "esbuild channel/channel.mjs --bundle --platform=node --format=esm --target=node22 --outfile=plugins/message-bridge/dist/channel.mjs --banner:js=\"import{createRequire}from'module';const require=createRequire(import.meta.url);\"",
+    "test": "npm run build && node --test --no-warnings \"test/*.test.mjs\""
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "esbuild": "^0.28.2"
+  },
+  "license": "MIT"
+}

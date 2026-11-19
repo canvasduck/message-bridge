@@ -1,0 +1,16 @@
+{
+  "name": "message-bridge",
+  "description": "Channel for the message bridge: messages between Claude Code sessions arrive in the session, with tools to reply, snooze (until a time or indefinitely) and list deferred work. Set up with /message-bridge:configure.",
+  "version": "0.1.0",
+  "keywords": [
+    "channel",
+    "messaging",
+    "snooze",
+    "mcp"
+  ],
+  "author": {
+    "name": "Stephen Han",
+    "email": "sh@stephenhan.me"
+  },
+  "license": "MIT"
+}

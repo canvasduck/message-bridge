@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "canvasduck",
+  "description": "Claude Code plugins by canvasduck",
+  "owner": { "name": "Stephen Han", "email": "sh@stephenhan.me" },
+  "plugins": [
+    {
+      "name": "message-bridge",
+      "description": "Message bridge between Claude Code sessions: send, reply, snooze and track deferred work.",
+      "category": "productivity",
+      "source": "./plugins/message-bridge"
+    }
+  ]
+}
